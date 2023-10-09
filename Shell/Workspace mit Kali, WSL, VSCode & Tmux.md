@@ -32,7 +32,8 @@ $ cp .tmux/.tmux.conf.local .
 
 ### Für Tmux kann ich diese THM Rooms empfehlen:
 
-[TryHackMe | REmux The Tmux](https://tryhackme.com/room/tmuxremux) [TryHackMe | tmux](https://tryhackme.com/room/rptmux)
+[TryHackMe | REmux The Tmux](https://tryhackme.com/room/tmuxremux) 
+[TryHackMe | tmux](https://tryhackme.com/room/rptmux)
 
 ## THM VPN einrichten
 
@@ -48,7 +49,7 @@ Danach generieren wir über den Button einen Config und laden diese runter. Wir 
 
 Kali sollte im Menu vom Windows Terminal bereits erscheinen. Genau wie alle anderen WSL Distris.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/519a7c62-28ec-47d3-8e4f-92e89273a0c7/26653ee7-7af1-4b9c-9c87-021ee52f3dec/Untitled.png)
+![[Windows-Terminal.png]]
 
 Wir starten also unser Kali und landen in unserem Homeverzeichnis.
 
@@ -79,8 +80,7 @@ Nun verbinden wir uns mit dem VPN von THM
 sudo openvpn USERNAME.ovpn
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/519a7c62-28ec-47d3-8e4f-92e89273a0c7/e45fd840-74af-4c43-b87a-e94164417c8b/Untitled.png)
-
+![[wsl-tmux-ovpn.png]]
 Die Magie kommt jetzt. Wir drücken STRG+A und danach einfach C Ein neues Shell öffnet sich und unser OpenVPN ist im Hintergrund.
 
 Ob das VPN funktioniert testen wir mit
@@ -89,9 +89,9 @@ Ob das VPN funktioniert testen wir mit
 sudo ping 10.10.10.10
 ```
 
-Wenn es so ausschaut habt ihr alles richtig gemacht
+![[wsl-ping-ovpn.png]]
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/519a7c62-28ec-47d3-8e4f-92e89273a0c7/d1cab9bf-a842-400e-8625-11245d9fad42/Untitled.png)
+Wenn es so ausschaut habt ihr alles richtig gemacht
 
 Zurück in den anderen Shell-Tab kommt ihr mit STRG+A (oder auch STRG+B) und Tab.
 
@@ -101,7 +101,7 @@ Mit STRG+A und - bzw _ könnt ihr das aktuelle Shell splitten, also teilen. Ihr 
 
 Die einzelnen Tastenkürzel stehen auf der Git Seite. Ihr könnt diese aber auch anpassen wenn ihr das wünscht. Ich würde am Anfang erstmal mit der Config arbeiten und dann anpassen.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/519a7c62-28ec-47d3-8e4f-92e89273a0c7/639d4ffe-f81a-4f6d-9a1d-a924ce7ccf98/Untitled.png)
+![[wsl-tmux-split.png]]
 
 Panels schließen könnt ihr mit STRG+A X - es wird noch mal abgefragt ob ihr wirklich wollt.
 
@@ -128,16 +128,14 @@ So könnt ihr einfach mehre Projekte getrennt von einander betreiben und kommt m
 
 Wir starten unser VSCode und können nun einen Remoteverbindung herstellen, mit WSL
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/519a7c62-28ec-47d3-8e4f-92e89273a0c7/37f6292a-b1bc-45f7-ac18-a22432966fca/Untitled.png)
+![[vscode-remote-wsl.png]]
 
 Danach können wir einen Ordner in WSL öffnen. Also in unserem Fall den THM Ordner
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/519a7c62-28ec-47d3-8e4f-92e89273a0c7/e19056dd-5996-4b6f-bf94-7905f7d9dacd/Untitled.png)
-
+![[vscode-remote-folder.png]]
 Danach könnt ihr Textfiles ganz easy in VSCode bearbeiten, filtern, durchsuchen - was man halt so macht.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/519a7c62-28ec-47d3-8e4f-92e89273a0c7/9c11ebf7-a3be-44ff-9231-67ca2903fa88/Untitled.png)
-
+![[vscode-wsl-explorer.png]]
 Das erspart uns nerviges arbeiten in Nano oder gar Vim. Auch Probleme mit der Zwischenablage gehören der Vergangenheit an.
 
 Für Tmux gibt es viele Plugins, daher haben wir den Plugin Manager (TPM) direkt installiert.
