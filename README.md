@@ -21,7 +21,7 @@ Diese Wissensdatenbank kann für folgende Zwecke verwendet werden:
 - Zur Speicherung von hilfreichen Ressourcen und Links.
 
 ## Anleitung
-1. Um die Datenbank anzuzeigen, können Sie Obsidian verwenden, ein plattformübergreifendes Notiz- und Wissensmanagement-Tool. [Obsidian herunterladen](https://obsidian.md/).
+1. Um die Datenbank anzuzeigen, können Sie Obsidian verwenden, ein plattformübergreifendes Notiz- und Wissensmanagement-Tool. [Obsidian herunterladen](https://obsidian.md/)
 2. Klonen Sie dieses GitLab-Repository, um Zugriff auf die Datenbankdateien zu erhalten.
 3. Öffnen Sie Obsidian und wählen Sie "Open Folder" aus dem Dateimenü aus.
 4. Wählen Sie den Ordner aus, in dem Sie dieses Repository geklont haben.
