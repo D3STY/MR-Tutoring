@@ -1,5 +1,6 @@
 # to exclude Obsidian's settings (including plugin and hotkey configurations)
-.obsidian/
+.obsidian/workspace.json
+.obsidian/plugins/*
 .trash/
 .DS_Store
 *.code-workspace
