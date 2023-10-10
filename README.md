@@ -6,13 +6,15 @@ Dieses Repository enthält meine persönliche Wissensdatenbank, die mit Obsidian
 ## Inhalt
 Die Wissensdatenbank ist in verschiedene Kategorien und Themen unterteilt, um eine übersichtliche Struktur zu gewährleisten. Die Hauptthemen, die in dieser Datenbank behandelt werden, umfassen:
 
-- [RasperryPi Zero](Raspberry Pi Zero/): Kurze Anleitung für den RaspberryPi Zero
-- [WSL](Windows/WSL/): Windows-Subsystem for Linux Installation
-- [Shell](Shell/): Einrichtung diverser Shell und Erweiterungen
-- [Speicherarten](Speicherarten/): Beschreibung von HDD, SSD und RAID Speichern
-- [Linux](Linux/): GNU spezifische Infos
-- [Netzwerk](Netzwerk/): Infos zu Netzwerken
-- [Security](Security/): Spezifische Infos zum Thema Sicherheit
+- [CompTIA](CompTIA/): Informationen und Ressourcen rund um CompTIA-Zertifizierungen.
+- [Linux](Linux/): Notizen und Tutorials zu verschiedenen Linux-Distributionen und Befehlen.
+- [Netzwerk](Netzwerk/): Grundlagen und Fortgeschrittenes zum Thema Netzwerke und Netzwerktechnologien.
+- [Raspberry Pi Zero](Raspberry_Pi_Zero/): Projekte und Anleitungen für den Raspberry Pi Zero.
+- [Security](Security/): Informationen zur IT-Sicherheit, einschließlich Sicherheitskonzepte und -praktiken.
+- [Shell](Shell/): Anleitungen und Beispiele für die Arbeit mit der Shell und Befehlszeilenprogrammierung.
+- [Speicherarten](Speicherarten/): Erklärungen und Vergleiche von verschiedenen Speicherarten.
+- [Windows](Windows/): Tipps und Tricks im Zusammenhang mit Windows-Betriebssystemen.
+
 ## Verwendung
 Diese Wissensdatenbank kann für folgende Zwecke verwendet werden:
 
