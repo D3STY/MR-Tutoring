@@ -10,5 +10,3 @@ RAID kann unter Verwendung von Funktionen des Betriebssystems implementiert werd
 > Als weitere Option implementieren einige Motherboards integrierte RAID-Funktionalität als Teil des Chipsatzes.
 
 Hardwarelösungen unterscheiden sich hauptsächlich durch ihre Unterstützung für eine Reihe von RAID-Levels. Einstiegscontroller unterstützen möglicherweise nur RAID 0 oder RAID 1, während mittelständische Controller Unterstützung für RAID 5 und RAID 10 hinzufügen können. Darüber hinaus kann Hardware-RAID oft eine beschädigte Festplatte im laufenden Betrieb auswechseln. Hot Swap bedeutet, dass das fehlerhafte Gerät ersetzt werden kann, ohne das Betriebssystem herunterzufahren.
-
-_Configuring a volume using RAID controller firmware._
