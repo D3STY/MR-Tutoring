@@ -2,7 +2,7 @@
 
 Vielen Dank für Ihr Interesse an der Mitarbeit an MR-Tutoring. Wir schätzen Ihre Hilfe bei der Verbesserung unseres Projekts. Bitte lesen Sie diese Beitragshinweise sorgfältig durch, bevor Sie mit dem Beitrag beginnen.
 
- ## Issue-Erstellung
+## Issue-Erstellung
  
 - Bevor Sie an einem Beitrag arbeiten, überprüfen Sie bitte die vorhandenen Issues, um sicherzustellen, dass Ihr Beitrag nicht bereits bearbeitet wird oder bereits ein Issue für das Problem besteht, das Sie beheben möchten.
 
