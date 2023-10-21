@@ -1,0 +1,39 @@
+- Search specific website
+	- `site:"linkedin.com" "<company name>"`
+	- `site:s3.amazonaws.com COMPANY_NAME`
+- Look for string in URL
+	- `inurl:"/course/jumpto.php" site:example.com`
+- Find string in page title
+	- `intitle:"index of" site:example.com`
+- Find pages that contain links to a certain page
+	- `link:"https:// en.wikipedia.org/wiki/ReDoS"`
+- Find pages with a specific file extension
+	- `filetype:log site:example.com`
+	- `site:example.com ext:php`
+	- `site:example.com ext:txt password`
+- Wildcards - match any character or series of characters in string
+	- `how to hack * using Google`
+- Force an exact match to a string - use quotes
+	- `"how to hack"`
+- "OR" operator - match pages with either one of two criteria
+	- `"how to hack" site:(reddit.com | stackoverflow.com)`
+	- `(SQL Injection | SQLi)`
+- Minus operator - exclude certain search results
+	- `"how to hack websites" -php`
+- Trademark, Terms of Service, Copyright, & Privacy Policy Recon
+	- You can Google the copyright and terms of service text from a main target to glean related hosts.
+	- `"© 2019 Twitch Interactive, Inc." inurl:twitch`
+	- `"© 2018 Twitch Interactive, Inc." inurl:twitch`
+- Public Google Drive documents
+	- `site:docs.google.com "<company_name>"`
+- Documents on documentcloud.org
+	- `site:documentcloud.org "<company_name>"`
+- Documents uploaded to Scribd
+	- `site:scribd.com "<target_domain>"`
+- Public PowerPoint presentations
+	- `intext:"<company_name>" filetype:pptx`
+- Public PDF documents
+	- `intext:"<company_name>" filetype:pdf`
+- .docx documents on target's website
+	- `intext:"<company_name>" filetype:docx`
+- Remember to search gist.github.com, pastebin.com, justpaste.it, pastefs.com, codepen.io, etc.

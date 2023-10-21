@@ -1,0 +1,5 @@
+- ASNs - Search for IP ranges owned by target company
+	- [bgp.he.net](https://bgp.he.net)
+- ARIN and RIPE - regional IP address space registries with searchable databases
+	- [ARIN](https://whois.arin.net/ui/query.do)- US Region
+	- [RIPE](https://apps.db.ripe.net/db-web- ui/#/fulltextsearch)- EU, Central Asia

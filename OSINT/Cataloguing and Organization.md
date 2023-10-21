@@ -1,0 +1,12 @@
+- Keeping a list of assets for a large company can be difficult and overwhelming.
+	- [bountycatch.py](https://gist.github.com/jhaddix/91035a01168902e8130a8e1bb383ae1e)
+		- Python3 and Redis
+		- Start a project called "dell" and add list of subdomains:
+			- `python3 bountycatch.py --project dell --file dell.txt`
+		- Print the current project:
+			- `python3 bountycatch.py --project dell -o print`
+		- Add new subdomains to project:
+			- `python3 bountycatch.py --project dell -o add -f githubdell8.txt`
+	- [BBRF](https://github.com/honoki/bbrf-client)
+		- GUI tool for managing recon data
+		- 
