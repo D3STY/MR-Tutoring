@@ -40,25 +40,16 @@ Hier ist eine Schritt-für-Schritt-Anleitung, wie Sie all dies mit Kleopatra dur
 
 ## Kleopatra herunterladen und installieren
 
-Gehen Sie
-
-[hierhin](https://gpg4win.org/download.html)
+Gehen Sie [hierhin](https://gpg4win.org/download.html)
 
 und laden Sie den Installer für Gpg4win (GNU Privacy Guard für Windows) herunter. Kleopatra, ein Zertifikatsmanager für
-
 [OpenPGP](https://www.openpgp.org/)
-
 ist eine der enthaltenen Softwareanwendungen in Gpg4win.
-
-Für Linux-Benutzer finden Sie Kleopatra
-
-[hier](https://apps.kde.org/kleopatra/)
-
-.
+Für Linux-Benutzer finden Sie Kleopatra[hier](https://apps.kde.org/kleopatra/)
 
 ![https://darknetlive.com/images/install-kleopetra-c3804fdd.jpeg](https://darknetlive.com/images/install-kleopetra-c3804fdd.jpeg)
 
-Installieren Sie Kleopatra
+## Installieren Sie Kleopatra
 
 Installieren Sie das Programm und führen Sie es aus.
 
