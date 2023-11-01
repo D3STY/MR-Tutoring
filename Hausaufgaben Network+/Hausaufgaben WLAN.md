@@ -3,7 +3,7 @@
 - WLAN-5 - mehr kann das Gerät leider nicht
 ## Channels
 - 2,4GHz - Kanal 1
-- 5GhZ - Kanal 102
+- 5GhZ - Kanal 104
 
 ![[Funkkanal 24.png]]
 ![[Funkkanal 5.png]]
