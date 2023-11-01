@@ -6,12 +6,15 @@
 - 2,4GHz Kanal 1
 - 5GhZ Kanal 102
 
-![[Pasted image 20231101172124.png]]![[Pasted image 20231101172216.png]]
+![[Funkkanal.png]]![[WLAN Nachbarn.png]]
 
 ## Sicherheit
 WPA2 + WPA3
-![[Pasted image 20231101172339.png]]
+![[WLAN Sicherheit.png]]
 
 - Geräte können eingeschränkt werden - sind sie jedoch nicht
 
-![[Pasted image 20231101172446.png]]
+![[WLAN Geräte.png]]
+- WPS aus Sicherheitsgründen deaktiviert. 
+- Keine Zeitschaltung - ich muss immer Online bleiben
+- Kein Gast-Zugang - Ich vertraue meinen Gästen 
