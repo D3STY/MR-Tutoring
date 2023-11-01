@@ -14,9 +14,11 @@
 
 ![[WLAN Nachbarn.png]]
 ## Sicherheit
+
 - WPA2 + WPA3
 - WPS aus Sicherheitsgründen deaktiviert. 
 - Keine Zeitschaltung - ich muss immer Online bleiben
 - Kein Gast-Zugang - Ich vertraue meinen Gästen 
 - Geräte können eingeschränkt werden - sind sie jedoch nicht
+
 ![[WLAN Sicherheit.png]]![[WLAN Geräte.png]]
