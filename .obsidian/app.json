@@ -1,4 +1,11 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Shell/Images"
+  "attachmentFolderPath": "Shell/Images",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": true,
+    "margin": "1",
+    "downscalePercent": 100
+  }
 }
